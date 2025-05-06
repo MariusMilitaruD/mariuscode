@@ -1,0 +1,37 @@
+/* Tags */
+.tag {
+  display: inline-block;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  padding: var(--spacing-1) var(--spacing-4);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.tag:hover {
+  background-color: var(--color-primary-light);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-8);
+}
+
+/* Project tags */
+.project-tag {
+  display: inline-block;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-xs, 0.75rem);
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--border-radius-md);
+}
+
+.project-tag--active {
+  background-color: var(--color-icon-bg);
+  color: var(--color-primary);
+}

@@ -1,0 +1,99 @@
+:root {
+  /* Colors */
+  --color-background: #102f28;
+  --color-background-alt: #0c2c25;
+  --color-background-card: #0f382f;
+  --color-background-card-alt: #16332d;
+  --color-background-tag: #143c33;
+  --color-primary: #00ff8c;
+  --color-primary-dark: #00dd7a;
+  --color-primary-light: rgba(0, 255, 140, 0.1);
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.8);
+  --color-text-subtle: rgba(255, 255, 255, 0.6);
+  --color-border: rgba(0, 255, 140, 0.3);
+  --color-border-hover: rgba(0, 255, 140, 0.5);
+  --color-icon-bg: #0c563f;
+
+  /* Typography */
+  --font-family-base: "Arial", "Helvetica", sans-serif;
+  --font-family-heading: "Arial", "Helvetica", sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 4rem;
+  --font-size-7xl: 7rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+
+  /* Borders */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
+  /* Container */
+  --container-max-width: 1280px;
+  --container-padding: 1rem;
+}
+
+/* Light mode variables */
+[data-theme="light"] {
+  --color-background: #f8f9fa;
+  --color-background-alt: #e9ecef;
+  --color-background-card: #ffffff;
+  --color-background-card-alt: #f1f3f5;
+  --color-background-tag: #e6f7ef;
+  --color-primary: #00aa5e;
+  --color-primary-dark: #008f4e;
+  --color-primary-light: rgba(0, 170, 94, 0.1);
+  --color-text: #212529;
+  --color-text-muted: rgba(33, 37, 41, 0.8);
+  --color-text-subtle: rgba(33, 37, 41, 0.6);
+  --color-border: rgba(0, 170, 94, 0.3);
+  --color-border-hover: rgba(0, 170, 94, 0.5);
+  --color-icon-bg: #e6f7ef;
+}

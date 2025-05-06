@@ -1,0 +1,346 @@
+/* Main CSS file that imports all other CSS modules */
+
+/* Base styles */
+@import "base/reset.css";
+@import "base/variables.css";
+@import "base/typography.css";
+@import "base/utilities.css";
+@import "base/animations.css";
+
+/* Layout */
+@import "layout/container.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* Components */
+@import "components/buttons.css";
+@import "components/forms.css";
+@import "components/cards.css";
+@import "components/tags.css";
+@import "components/social-links.css";
+@import "components/back-to-top.css";
+
+/* Sections */
+@import "sections/hero.css";
+@import "sections/about.css";
+@import "sections/expertise.css";
+@import "sections/portfolio.css";
+@import "sections/services.css";
+@import "sections/contact.css";
+
+/* Theme */
+@import "theme/dark-mode.css";
+
+/* Responsive */
+@import "responsive/responsive.css";
+
+.hero__image-container {
+  margin-top: 50px; /* Ajustează valoarea pentru a muta cercul mai jos */
+  display: flex;  /* Stiluri pentru varianta mobil */
+  @media (max-width: 768px) {
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Aliniază textul la stânga */
+      gap: 20px; /* Spațiu între elemente */
+    }
+  
+    .hero__text {
+      text-align: left; /* Text aliniat la stânga */
+      max-width: 100%; /* Asigură că textul nu depășește lățimea containerului */
+    }
+  
+    .hero__title {
+      font-size: 2rem; /* Dimensiune mai mică pentru titlu */
+      line-height: 1.2; /* Spațiere mai compactă */
+    }
+  
+    .hero__tagline {
+      font-size: 1.5rem; /* Dimensiune mai mică pentru tagline */
+      line-height: 1.4;
+    }
+  
+    .hero__description {
+      font-size: 1rem; /* Dimensiune mai mică pentru descriere */
+      line-height: 1.6;
+    }
+  
+    .btn--outline {
+      align-self: stretch; /* Butonul ocupă întreaga lățime */
+      text-align: center; /* Textul din buton este centrat */
+      padding: 10px 15px; /* Spațiu interior mai mic */
+    }
+  
+    .hero__image-container {
+      display: none; /* Ascunde imaginea pe ecrane mici pentru a economisi spațiu */
+    }
+  }  /* Stiluri pentru varianta mobil */
+  @media (max-width: 768px) {
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Aliniază textul la stânga */
+      gap: 20px; /* Spațiu între elemente */
+      padding: 20px; /* Adaugă spațiu interior */
+    }
+  
+    .hero__text {
+      text-align: left; /* Text aliniat la stânga */
+      max-width: 100%; /* Asigură că textul nu depășește lățimea containerului */
+      animation: slide-in 0.8s ease-out; /* Animație de la stânga la dreapta */
+    }
+  
+    .hero__title {
+      font-size: 2rem; /* Dimensiune mai mică pentru titlu */
+      line-height: 1.2; /* Spațiere mai compactă */
+    }
+  
+    .hero__tagline {
+      font-size: 1.5rem; /* Dimensiune mai mică pentru tagline */
+      line-height: 1.4;
+    }
+  
+    .hero__description {
+      font-size: 1rem; /* Dimensiune mai mică pentru descriere */
+      line-height: 1.6;
+    }
+  
+    .btn--outline {
+      align-self: flex-start; /* Butonul rămâne aliniat la stânga */
+      text-align: center; /* Textul din buton este centrat */
+      padding: 10px 15px; /* Spațiu interior mai mic */
+    }
+  
+    .hero__image-container {
+      display: none; /* Ascunde imaginea pe ecrane mici pentru a economisi spațiu */
+    }
+  }
+  
+  /* Animație pentru textul care apare de la stânga la dreapta */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin-top: 120px; /* Crește valoarea pentru a muta secțiunea și mai jos */
+}
+
+/* Elimină outline-ul verde după click pe linkuri sau butoane */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* Efect curat de luminozitate și întunecare pentru simbolul </> */
+.logo__code {
+  animation: glow 3s infinite alternate; /* Animație continuă */
+}
+
+/* Definirea animației */
+@keyframes glow {
+  0% {
+    color: #ffffff; /* Alb luminos */
+  }
+  100% {
+    color: #aaaaaa; /* Gri întunecat */
+  }
+}
+
+/* Efect de tranziție pentru text */
+.hero__subtitle,
+.hero__title,
+.hero__tagline,
+.hero__description,
+.about__title,
+.about__description,
+.contact__title,
+.contact__description {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Stil pentru opțiunile de limbă */
+.lang-active {
+  font-weight: bold;
+  color: #00ff00; /* Verde pentru limba activă */
+  cursor: default; /* Nu este clickabilă */
+}
+
+.lang-inactive {
+  font-weight: normal;
+  color: #888888; /* Gri pentru limba inactivă */
+  cursor: pointer; /* Este clickabilă */
+}
+
+
+/* Stiluri pentru varianta mobil */
+@media (max-width: 768px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aliniază textul la stânga */
+    gap: 20px; /* Spațiu între elemente */
+    padding: 20px; /* Adaugă spațiu interior */
+  }
+
+  .hero__text {
+    text-align: left; /* Text aliniat la stânga */
+    max-width: 100%; /* Asigură că textul nu depășește lățimea containerului */
+    animation: slide-in 0.8s ease-out; /* Animație de la stânga la dreapta */
+  }
+
+  .hero__title {
+    font-size: 2rem; /* Dimensiune mai mică pentru titlu */
+    line-height: 1.2; /* Spațiere mai compactă */
+  }
+
+  .hero__tagline {
+    font-size: 1.5rem; /* Dimensiune mai mică pentru tagline */
+    line-height: 1.4;
+  }
+
+  .hero__description {
+    font-size: 1rem; /* Dimensiune mai mică pentru descriere */
+    line-height: 1.6;
+  }
+
+  .btn--outline {
+    align-self: flex-start; /* Butonul rămâne aliniat la stânga */
+    text-align: center; /* Textul din buton este centrat */
+    padding: 10px 15px; /* Spațiu interior mai mic */
+  }
+
+/* Animație pentru textul care apare de la stânga la dreapta */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero {
+  margin-bottom: 100px; /* Adaugă spațiu între Hero și secțiunea următoare */
+}
+
+.about {
+  margin-top: 50px; /* Adaugă spațiu între About și secțiunea anterioară */
+}
+
+.scroll-down-arrow {
+  position: absolute; /* Poziționează săgeata relativ la secțiunea Hero */
+  bottom: 20px; /* Plasează săgeata la 20px de partea de jos a secțiunii */
+  left: 50%; /* Centrează săgeata pe orizontală */
+  transform: translateX(-50%); /* Corectează alinierea pentru centrare */
+  z-index: 10; /* Asigură-te că săgeata este deasupra altor elemente */
+  width: 30px; /* Dimensiunea săgeții */
+  height: 30px;
+  cursor: pointer; /* Adaugă un cursor pointer pentru interacțiune */
+}
+
+/* Ajustează poziționarea pe mobil */
+@media (max-width: 768px) {
+  .scroll-down-arrow {
+    bottom: 10px; /* Plasează săgeata mai aproape de partea de jos pe mobil */
+    width: 25px; /* Redu dimensiunea săgeții pe mobil */
+    height: 25px;
+  }
+}
+.hero__image-container {
+  position: relative; /* Asigură-te că imaginea este poziționată relativ */
+  margin-bottom: 50px; /* Adaugă spațiu sub imagine pentru săgeată */
+  max-width: 100%; /* Asigură că imaginea nu depășește lățimea containerului */
+  height: auto; /* Păstrează proporțiile imaginii */
+
+
+/* Stiluri generale pentru imagine și săgeată */
+.hero__image-container {
+  display: flex; /* Activează Flexbox pentru centrare */
+  justify-content: center; /* Centrează imaginea pe orizontală */
+  align-items: center; /* Centrează imaginea pe verticală */
+  position: relative; /* Poziționează relativ pentru săgeată */
+  margin: 0 auto; /* Centrează imaginea în container */
+  max-width: 100%; /* Asigură că imaginea nu depășește lățimea containerului */
+  height: auto; /* Păstrează proporțiile imaginii */
+}
+
+.scroll-down-arrow {
+  position: absolute; /* Poziționează săgeata relativ la container */
+  bottom: -40px; /* Plasează săgeata sub imagine */
+  left: 50%; /* Centrează săgeata pe orizontală */
+  transform: translateX(-50%); /* Corectează alinierea pentru centrare */
+  width: 30px; /* Dimensiunea săgeții */
+  height: 30px;
+  cursor: pointer; /* Adaugă un cursor pointer pentru interacțiune */
+  z-index: 10; /* Asigură-te că săgeata este deasupra altor elemente */
+}
+
+/* Stiluri pentru dispozitive mobile */
+@media (max-width: 768px) {
+  .hero__image-container {
+    margin-bottom: 20px; /* Adaugă spațiu între imagine și săgeată */
+    max-width: 90%; /* Redu dimensiunea imaginii pe mobil */
+  }
+
+  .scroll-down-arrow {
+    position: relative; /* Poziționează săgeata relativ la container */
+    margin-top: 10px; /* Adaugă spațiu între imagine și săgeată */
+    bottom: auto; /* Elimină poziționarea absolută */
+    left: 50%; /* Centrează săgeata pe orizontală */
+    transform: translateX(-50%); /* Corectează alinierea pentru centrare */
+    width: 25px; /* Dimensiunea săgeții pe mobil */
+    height: 25px;
+  }
+}
+
+/* Stiluri pentru dispozitive mai mari (tablete) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero__image-container {
+    margin-bottom: 30px; /* Adaugă spațiu între imagine și săgeată */
+    max-width: 80%; /* Ajustează dimensiunea imaginii pe tabletă */
+  }
+
+  .scroll-down-arrow {
+    bottom: -30px; /* Plasează săgeata sub imagine */
+    width: 28px; /* Dimensiunea săgeții pe tabletă */
+    height: 28px;
+  }
+}
+
+/* Stiluri pentru dispozitive mobile */
+@media (max-width: 768px) {
+  .hero__image-container {
+    display: flex; /* Activează Flexbox pentru centrare */
+    justify-content: center; /* Centrează imaginea pe orizontală */
+    align-items: center; /* Centrează imaginea pe verticală */
+    margin: 0 auto; /* Centrează imaginea în container */
+    max-width: 95%; /* Mărește imaginea pe mobil */
+    height: auto; /* Păstrează proporțiile imaginii */
+  }
+
+  .scroll-down-arrow {
+    position: relative; /* Poziționează săgeata relativ la container */
+    margin-top: 15px; /* Adaugă spațiu între imagine și săgeată */
+    bottom: auto; /* Elimină poziționarea absolută */
+    left: 50%; /* Centrează săgeata pe orizontală */
+    transform: translateX(-50%); /* Corectează alinierea pentru centrare */
+    width: 25px; /* Dimensiunea săgeții pe mobil */
+    height: 25px;
+  }
+}

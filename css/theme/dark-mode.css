@@ -1,0 +1,52 @@
+/* Dark Mode Styles */
+[data-theme="light"] {
+  --color-background: #f8f9fa;
+  --color-background-alt: #e9ecef;
+  --color-background-card: #ffffff;
+  --color-background-card-alt: #f1f3f5;
+  --color-background-tag: #e6f7ef;
+  --color-primary: #00aa5e;
+  --color-primary-dark: #008f4e;
+  --color-primary-light: rgba(0, 170, 94, 0.1);
+  --color-text: #212529;
+  --color-text-muted: rgba(33, 37, 41, 0.8);
+  --color-text-subtle: rgba(33, 37, 41, 0.6);
+  --color-border: rgba(0, 170, 94, 0.3);
+  --color-border-hover: rgba(0, 170, 94, 0.5);
+  --color-icon-bg: #e6f7ef;
+}
+
+/* Transition for theme switching */
+body {
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Specific light mode adjustments */
+[data-theme="light"] .header {
+  background-color: transparent;
+}
+
+[data-theme="light"] .header.scrolled {
+  background-color: rgba(248, 249, 250, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .logo__text--white {
+  color: var(--color-text);
+}
+
+[data-theme="light"] .about__image-caption {
+  background: linear-gradient(to top, rgba(248, 249, 250, 0.9), transparent);
+}
+
+[data-theme="light"] .project-card,
+[data-theme="light"] .service-card,
+[data-theme="light"] .expertise-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .service-card:hover,
+[data-theme="light"] .expertise-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}

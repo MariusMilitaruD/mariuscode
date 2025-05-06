@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marius Militaru - Software engineer specializing in AI and innovative solutions">
+  <meta name="keywords" content="software engineer, AI, development, portfolio">
+  <meta name="author" content="Marius Militaru">
+  
+  <title>Marius Militaru - Portfolio</title>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="js/main.js" as="script">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Marius Militaru - Portfolio">
+  <meta property="og:description" content="Software engineer specializing in AI and innovative solutions">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:url" content="https://militarumarius.com">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="/" class="logo">
+          <span class="logo__text logo__text--white">M</span>
+          <span class="logo__text logo__text--green">M</span>
+          <span class="logo__code">&lt;/&gt;</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+            <span class="menu-toggle__icon"></span>
+            <span class="sr-only">Menu</span>
+          </button>
+
+          <ul class="main-nav__list" id="main-menu">
+            <li class="main-nav__item main-nav__item--status">
+              <span class="status-indicator"></span>            
+              <span>Available for work</span>
+            </li>
+            <li class="main-nav__item"><a href="#about" class="main-nav__link">About</a></li>
+            <li class="main-nav__item"><a href="#projects" class="main-nav__link">Projects</a></li>
+            <li class="main-nav__item"><a href="#services" class="main-nav__link">Services</a></li>
+            <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
+           
+            <li class="main-nav__item">
+              <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+            </li>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <p class="hero__subtitle">Hi, my name is</p>
+            <h1 class="hero__title">Marius Militaru</h1>
+            <h2 class="hero__tagline">I build amazing things with <span class="highlight">AI</span></h2>
+            <p class="hero__description">
+              I'm a software engineer specializing in building exceptional digital experiences using artificial
+              intelligence. Currently, I'm focused on creating innovative AI-powered solutions that push the
+              boundaries of what's possible.
+            </p>
+            <a href="#" class="btn btn--outline">
+              <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path>
+                <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path>
+                <path d="M9.5 15.5a5 5 0 0 0 5 0"></path>
+              </svg>
+              Happy to chat on WhatsApp
+            </a>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero__image-container">
+            <div class="hero__image">
+              <img src="assets/profile-image.jpg" alt="Marius Militaru" width="500" height="500">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__image-wrapper">
+            <figure class="about__image">
+              <img src="assets/robot-bench.jpg" alt="AI robot sitting on a bench" width="600" height="400">
+              <figcaption class="about__image-caption">
+                <span class="about__image-label">TECHNOLOGY</span>
+                <h3 class="about__image-title">AI-Driven Development</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="about__text">
+            <div class="about__card">
+              <div class="about__icons">
+                <span>&lt;&gt;</span>
+                <span>&gt;</span>
+                <span class="about__square-icon">□</span>
+              </div>
+              <h2 class="about__title">Creative Code Artistry</h2>
+              <p class="about__description">
+                Transforming complex ideas into elegant digital solutions through the perfect blend of art and
+                technology. My code doesn't just function—it creates experiences that resonate and inspire.
+              </p>
+              <div class="tags">
+                <span class="tag">Innovative UI/UX</span>
+                <span class="tag">Clean Architecture</span>
+                <span class="tag">AI Integration</span>
+              </div>
+              <h3 class="about__subtitle">Experience</h3>
+              <ul class="experience-list">
+                <li class="experience-item">
+                  <div class="experience-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <div class="experience-content">
+                    <h4 class="experience-title">Software Development</h4>
+                    <p class="experience-description">
+                      8+ years creating robust, scalable applications with focus on AI and modern frameworks.
+                    </p>
+                  </div>
+                </li>
+                <li class="experience-item">
+                  <div class="experience-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                  <div class="experience-content">
+                    <h4 class="experience-title">AI Solutions Architecture</h4>
+                    <p class="experience-description">
+                      Designing and implementing cutting-edge AI systems for real-world business challenges.
+                    </p>
+                  </div>
+                </li>
+                <li class="experience-item">
+                  <div class="experience-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div class="experience-content">
+                    <h4 class="experience-title">UI/UX Engineering</h4>
+                    <p class="experience-description">
+                      Creating intuitive, accessible, and beautiful interfaces that elevate the user experience.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">EXPERTISE</span>
+          <h2 class="section-title">Technical <span class="highlight">Proficiency</span></h2>
+          <p class="section-description">
+            A comprehensive set of skills acquired through years of experience, enabling me to develop innovative and
+            robust solutions across the tech stack.
+          </p>
+        </div>
+
+        <div class="expertise__grid">
+          <!-- React Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
+                <path d="M12 22.5c-5.799 0-10.5-2.457-10.5-5.5 0-1.95 1.846-3.71 4.874-4.771a40.792 40.792 0 0 1-.33-1.126c-.289-1.144-.525-2.1-.525-2.846 0-2.598 3.809-4.757 6.481-4.757 2.796 0 6.481 2.159 6.481 4.757 0 .747-.236 1.702-.525 2.846-.102.401-.21.787-.33 1.126C20.654 13.29 22.5 15.05 22.5 17c0 3.043-4.701 5.5-10.5 5.5Zm0-2c5.247 0 8.5-2.135 8.5-3.5 0-1.094-1.586-2.453-4.066-3.147a1 1 0 0 1-.707-1.225c.13-.366.249-.773.358-1.199.267-1.061.415-1.842.415-2.172 0-1.347-2.525-2.757-4.481-2.757-1.956 0-4.481 1.41-4.481 2.757 0 .33.148 1.111.415 2.173.109.425.227.832.358 1.198a1 1 0 0 1-.707 1.225C5.086 14.547 3.5 15.906 3.5 17c0 1.365 3.253 3.5 8.5 3.5Z" />
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">React</h4>
+            <p class="expertise-card__category">Front-end Library</p>
+          </div>
+
+          <!-- JavaScript Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon expertise-card__icon--bg">
+              <span>JS</span>
+            </div>
+            <h4 class="expertise-card__title">JavaScript</h4>
+            <p class="expertise-card__category">Programming</p>
+          </div>
+
+          <!-- Node.js Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                <path d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.203-.221h.936c.11 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.204-.221h.954c.11 0 .202.073.202.184.147.971.568 1.449 2.51 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531z" />
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">Node.js</h4>
+            <p class="expertise-card__category">Back-end</p>
+          </div>
+
+          <!-- AI Integration Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <path d="M22 4 12 14.01l-3-3"></path>
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">AI Integration</h4>
+            <p class="expertise-card__category">Technology</p>
+          </div>
+
+          <!-- Flutter Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">Flutter</h4>
+            <p class="expertise-card__category">Mobile Dev</p>
+          </div>
+
+          <!-- SQL/NoSQL Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">SQL/NoSQL</h4>
+            <p class="expertise-card__category">Databases</p>
+          </div>
+
+          <!-- Cloud Services Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                <path d="M18.75 11.35a4.32 4.32 0 0 0 .25-1.46 4.1 4.1 0 0 0-4.12-4.14 4.15 4.15 0 0 0-3.46 1.87 3.26 3.26 0 0 0-2.92-1.8 3.3 3.3 0 0 0-3.32 3.27c0 .07 0 .14.05.21A4.32 4.32 0 0 0 2 13.1a4.35 4.35 0 0 0 4.35 4.35h11.3a4.35 4.35 0 0 0 4.35-4.35c0-.68-.25-1.3-.25-1.75zM6.5 6.01a.5.5 0 0 1 .5-.5h1.75a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-1.5zm4 0a.5.5 0 0 1 .5-.5h1.75a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-.5.5h-1.75a.5.5 0 0 1-.5-.5v-1.5zm4 0a.5.5 0 0 1 .5-.5h1.75a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-.5.5h-1.75a.5.5 0 0 1-.5-.5v-1.5z" />
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">Cloud Services</h4>
+            <p class="expertise-card__category">Infrastructure</p>
+          </div>
+
+          <!-- UI/UX Design Card -->
+          <div class="expertise-card">
+            <div class="expertise-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h4 class="expertise-card__title">UI/UX Design</h4>
+            <p class="expertise-card__category">Creative</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PORTFOLIO</span>
+          <div class="portfolio__header">
+            <div>
+              <h2 class="portfolio__title">My Projects</h2>
+              <p class="portfolio__subtitle">
+                Innovative solutions driven by AI and modern tech stacks.
+              </p>
+            </div>
+            <a href="#" class="view-all">
+              View All
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio__grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="assets/project-image.jpg" alt="AI-Powered Personal Assistant" width="600" height="400">
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span class="project-tag project-tag--active">AI</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+              </div>
+              <h3 class="project-card__title">AI-Powered Personal Assistant</h3>
+              <p class="project-card__description">
+                A cutting-edge personal assistant leveraging GPT for natural language understanding and task automation.
+              </p>
+              <a href="#" class="project-card__link">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="assets/project-image.jpg" alt="Smart Home IoT Hub" width="600" height="400">
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span class="project-tag project-tag--active">IoT</span>
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <h3 class="project-card__title">Smart Home IoT Hub</h3>
+              <p class="project-card__description">
+                A centralized platform for managing and monitoring smart home devices with ML-powered energy optimization.
+              </p>
+              <a href="#" class="project-card__link">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="assets/project-image.jpg" alt="Predictive Analytics Dashboard" width="600" height="400">
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span class="project-tag project-tag--active">Analytics</span>
+                <span class="project-tag">D3.js</span>
+                <span class="project-tag">Machine Learning</span>
+              </div>
+              <h3 class="project-card__title">Predictive Analytics Dashboard</h3>
+              <p class="project-card__description">
+                An enterprise-grade analytics platform with predictive modeling and interactive data visualization.
+              </p>
+              <a href="#" class="project-card__link">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-tag">WHAT I OFFER</span>
+          <h2 class="section-title">
+            <span>Professional </span>
+            <span class="highlight">Services</span>
+          </h2>
+          <p class="section-description">
+            Tailored solutions to help businesses leverage technology and achieve their goals with innovative, scalable,
+            and user-friendly applications.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <!-- Mobile App Development Card -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Mobile App Development</h3>
+            <p class="service-card__description">
+              Create stunning, high-performance mobile applications for iOS and Android platforms with seamless user
+              experiences.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Native iOS & Android Apps</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Cross-platform Solutions</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>App Store Optimization</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Custom Software Development Card -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Custom Software Development</h3>
+            <p class="service-card__description">
+              End-to-end development of bespoke software solutions tailored to your specific business needs and
+              objectives.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Web Applications</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Mobile Applications</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Enterprise Solutions</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- UI/UX Design Card -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card__title">UI/UX Design with Figma</h3>
+            <p class="service-card__description">
+              Creating intuitive, engaging, and accessible user interfaces using Figma to enhance user experience and
+              drive business growth.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>User Research & Testing</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Figma Prototyping</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Design Systems Creation</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cloud Solutions Card -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Cloud Solutions</h3>
+            <p class="service-card__description">
+              Expert cloud architecture and deployment services to ensure your applications are scalable, secure, and
+              cost-effective.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Cloud Migration</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Serverless Architecture</span>
+              </li>
+              <li class="service-card__list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>DevOps Implementation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__content">
+          <!-- Left Side - Contact Info -->
+          <div class="contact__info">
+            <span class="contact__label">GET IN TOUCH</span>
+            <h2 class="contact__title">
+              <span>Let's </span>
+              <span class="highlight">Connect</span>
+            </h2>
+            <p class="contact__description">
+              Have a project in mind or just want to say hello? I'd love to hear from you. Feel free to reach out using
+              any of the methods below.
+            </p>
+
+            <div class="contact__methods">
+              <!-- Email -->
+              <div class="contact-method">
+                <div class="contact-method__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">Email</h3>
+                  <p class="contact-method__value">contact@militarumarius.com</p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method">
+                <div class="contact-method__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">Location</h3>
+                  <p class="contact-method__value">Europe</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-method">
+                <div class="contact-method__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path>
+                    <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path>
+                    <path d="M9.5 15.5a5 5 0 0 0 5 0"></path>
+                  </svg>
+                </div>
+                <div class="contact-method__content">
+                  <h3 class="contact-method__title">WhatsApp</h3>
+                  <p class="contact-method__value">+40 7XX XXX XXX</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <h3 class="contact__social-title">Connect with me</h3>
+              <div class="contact__social-links">
+                <a href="#" class="contact__social-link" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Dribbble">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 12a4 4 0 0 1 8 0"></path>
+                    <path d="M12 8a4 4 0 0 1 0 8"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Contact Form -->
+          <div class="contact__form-container">
+            <form class="contact__form" id="contact-form">
+              <h3 class="contact__form-title">Send me a message</h3>
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="6" class="form-input" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__copyright">© 2025 Militaru Marius. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Dribbble">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 12a4 4 0 0 1 8 0"></path>
+              <path d="M12 8a4 4 0 0 1 0 8"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
