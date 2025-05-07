@@ -236,3 +236,26 @@ function initContactForm() {
 
 
 
+
+
+// Verifică dacă există o temă salvată în localStorage
+const savedTheme = localStorage.getItem('theme');
+
+// Dacă nu există o temă salvată, setează dark mode ca implicit
+if (!savedTheme) {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  localStorage.setItem('theme', 'dark');
+} else {
+  // Aplică tema salvată
+  document.documentElement.setAttribute('data-theme', savedTheme);
+}
+
+// Adaugă un event listener pentru butonul de schimbare a temei
+const themeToggleButton = document.querySelector('.theme-toggle');
+themeToggleButton.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+});
+
