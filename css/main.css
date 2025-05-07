@@ -348,4 +348,20 @@ button:focus {
 
 
 
+/* Tema dark (implicită) */
+:root {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
 
+/* Tema light */
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Aplică variabilele */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
