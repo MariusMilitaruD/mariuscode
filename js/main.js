@@ -238,6 +238,10 @@ function initContactForm() {
 
 
 
+
+
+
+
 // Verifică dacă există o temă salvată în localStorage
 const savedTheme = localStorage.getItem('theme');
 
