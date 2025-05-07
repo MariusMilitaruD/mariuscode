@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    // Aplică tema dark înainte de încărcarea completă a paginii
+    (function() {
+      const savedTheme = localStorage.getItem("theme");
+      if (!savedTheme || savedTheme === "dark") {
+        document.documentElement.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Marius Militaru - Software engineer specializing in AI and innovative solutions">
   <meta name="keywords" content="software engineer, AI, development, portfolio">
   <meta name="author" content="Marius Militaru">
   
-  <title>Marius Militaru - Portfolio</title>
+  <title>Site cu Dark Mode</title>
   
   <!-- Preload critical assets -->
   <link rel="preload" href="css/main.css" as="style">
@@ -25,6 +35,8 @@
   <meta property="og:image" content="assets/og-image.jpg">
   <meta property="og:url" content="https://militarumarius.com">
   <meta name="twitter:card" content="summary_large_image">
+
+  <script src="theme.js" defer></script>
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
