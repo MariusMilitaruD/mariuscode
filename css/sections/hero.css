@@ -157,3 +157,16 @@
     height: 250px;
   }
 }
+
+@media (max-width: 375px) {
+  .scroll-down {
+    display: none; /* Ascunde săgeata */
+  }
+}
+
+@media (max-width: 360px) {
+  .scroll-down {
+    bottom: 10px; /* Mută săgeata mai aproape de marginea de jos */
+    display: none; /* Ascunde săgeata */
+  }
+}
