@@ -171,3 +171,18 @@
     font-size: var(--font-size-2xl);
   }
 }
+
+
+
+
+
+.hero__image {
+  width: 250px !important;
+  height: 250px !important;
+  border-radius: 50% !important;
+}
+
+.scroll-down {
+  margin-top: 20px !important;
+  position: relative !important;
+}
