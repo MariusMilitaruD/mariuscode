@@ -98,28 +98,69 @@ body {
 
 
 
-/* Pentru mobil */
-@media only screen and (max-width: 768px) {
-  .profile-container {
-    /* Ajustează dimensiunea, marginile și poziționarea */
-    width: 90%; /* sau altă dimensiune potrivită */
-    margin: 0 auto; /* Centrat pe ecran */
-    text-align: center; /* Poziționare centrală */
-  }
+/* Stiluri generale */
+.hero {
+  display: flex; /* Layout flexibil */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Pentru tablete */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .profile-container {
-    width: 70%; /* Ajustează dimensiunea */
-    margin: 0 auto; /* Centrat pe ecran */
-    text-align: center;
-  }
+/* Imaginea și containerul */
+.hero_image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-
-.profile-image {
-  max-width: 100%; /* Asigură-te că imaginea nu depășește containerul */
+.hero_image-container img {
+  max-width: 100%; /* Asigură redimensionarea imaginii */
   height: auto; /* Păstrează proporțiile */
-  border-radius: 50%; /* Pentru a menține imaginea circulară */
+  border-radius: 50%; /* Pentru imagini circulare */
+}
+
+/* Textul asociat */
+.hero_text {
+  margin: 20px 0;
+}
+
+/* Scroll-down arrow */
+.scroll-down {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Media Queries pentru dispozitive mobile */
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stivuiește elementele pe verticală */
+    padding: 10px;
+  }
+
+  .hero_image-container {
+    margin-bottom: 20px; /* Spațiu între imagine și text */
+  }
+
+  .hero_text {
+    font-size: 16px; /* Dimensiune mai mică pentru text */
+  }
+}
+
+/* Media Queries pentru tablete */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .hero_image-container {
+    width: 80%; /* Ajustează lățimea pentru tablete */
+    margin-bottom: 20px;
+  }
+
+  .hero_text {
+    font-size: 18px;
+  }
 }
