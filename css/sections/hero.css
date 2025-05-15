@@ -52,15 +52,5 @@
 
 
 
-.hero {
-  box-sizing: border-box;
-  overflow: hidden; /* prevenim suprapunerea */
-}
-
-.hero__image {
-  display: block;
-  margin: 0 auto;
-}
-
 
 
