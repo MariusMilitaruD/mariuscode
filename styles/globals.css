@@ -92,3 +92,27 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+
+
+/* Pentru mobil */
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    /* Ajustează dimensiunea, marginile și poziționarea */
+    width: 90%; /* sau altă dimensiune potrivită */
+    margin: 0 auto; /* Centrat pe ecran */
+    text-align: center; /* Poziționare centrală */
+  }
+}
+
+/* Pentru tablete */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .profile-container {
+    width: 70%; /* Ajustează dimensiunea */
+    margin: 0 auto; /* Centrat pe ecran */
+    text-align: center;
+  }
+}
