@@ -116,3 +116,10 @@ body {
     text-align: center;
   }
 }
+
+
+.profile-image {
+  max-width: 100%; /* Asigură-te că imaginea nu depășește containerul */
+  height: auto; /* Păstrează proporțiile */
+  border-radius: 50%; /* Pentru a menține imaginea circulară */
+}
