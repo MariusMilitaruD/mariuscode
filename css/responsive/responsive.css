@@ -132,6 +132,37 @@
 
 
 
+/* Stiluri pentru dispozitive mobile (mai mici de 576px) */
+@media (max-width: 575.98px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
 
+  .hero__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 200px; /* Ajustează dimensiunea imaginii */
+    height: 200px;
+  }
+
+  .hero__image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Asigură forma circulară */
+  }
+
+  .scroll-down {
+    margin-top: 20px; /* Spațiu suplimentar între imagine și săgeată */
+    position: relative;
+    z-index: 1; /* Asigură că săgeata nu se suprapune peste imagine */
+  }
+}
 
 
